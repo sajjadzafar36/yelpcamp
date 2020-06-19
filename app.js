@@ -18,7 +18,7 @@ var indexRoutes = require("./routes/index"),
 
 //seedDb(); //not seeding it anymore
 
-console.log(process.env.DATABASEURL);
+//console.log(process.env.DATABASEURL);
 
 //database connection & creating new database
 mongoose.connect("process.env.DATABASEURL",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
