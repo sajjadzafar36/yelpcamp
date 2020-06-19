@@ -18,11 +18,13 @@ var indexRoutes = require("./routes/index"),
 
 //seedDb(); //not seeding it anymore
 
+console.log(process.env.DATABASEURL);
+
 //database connection & creating new database
-mongoose.connect("mongodb://localhost/yelp_camp_v13",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
+mongoose.connect("process.env.DATABASEURL",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 
 
-mongoose.connect("mongodb+srv://asher:asher@yelpcamp-ttflj.mongodb.net/<dbname>?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
+// mongoose.connect("mongodb+srv://asher:asher@yelpcamp-ttflj.mongodb.net/<dbname>?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 //mongodb+srv://asher:asher@yelpcamp-ttflj.mongodb.net/<dbname>?retryWrites=true&w=majority
 
 app.use(bodyParser.urlencoded({ extended: true }));
