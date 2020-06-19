@@ -21,7 +21,7 @@ var indexRoutes = require("./routes/index"),
 //console.log(process.env.DATABASEURL);
 
 //database connection & creating new database
-mongoose.connect("process.env.DATABASEURL",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
+mongoose.connect(process.env.DATABASEURL,{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 
 
 // mongoose.connect("mongodb+srv://asher:asher@yelpcamp-ttflj.mongodb.net/<dbname>?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
