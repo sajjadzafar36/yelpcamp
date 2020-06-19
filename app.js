@@ -25,7 +25,7 @@ mongoose.connect("process.env.DATABASEURL",{useNewUrlParser: true, useUnifiedTop
 
 
 // mongoose.connect("mongodb+srv://asher:asher@yelpcamp-ttflj.mongodb.net/<dbname>?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
-//mongodb+srv://asher:asher@yelpcamp-ttflj.mongodb.net/<dbname>?retryWrites=true&w=majority
+//mongodb+srv://asher:asher@yelpcamp-ttflj.mongodb.net/yelpcamp?retryWrites=true&w=majority
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
