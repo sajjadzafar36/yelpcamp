@@ -20,8 +20,10 @@ var indexRoutes = require("./routes/index"),
 
 //console.log(process.env.DATABASEURL);
 
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v13"
+
 //database connection & creating new database
-mongoose.connect(process.env.DATABASEURL,{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
+mongoose.connect(url,{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 
 
 // mongoose.connect("mongodb+srv://asher:asher@yelpcamp-ttflj.mongodb.net/<dbname>?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
